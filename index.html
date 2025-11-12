@@ -3,28 +3,28 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>SVHC.ai — Actif numérique premium, disponible à l’acquisition</title>
-  <meta name="description" content="SVHC.ai — actif premium pour la conformité REACH / substances SVHC. Veille, classification, gestion des risques. Offres sérieuses uniquement (entreprises & institutions)." />
+  <meta name="description" content="SVHC.ai — bannière neutre & lisible pour la conformité substances (SVHC/REACH). Inventaires & déclarations (SCIP, RoHS, CLP, TSCA, Prop 65), gestion BOM/SDS, preuves & auditabilité. Offres sérieuses uniquement (entreprises & institutions)." />
 
   <link rel="canonical" href="https://www.svhc.ai/" />
   <link rel="alternate" href="https://www.svhc.ai/" hreflang="fr" />
   <link rel="alternate" href="https://www.svhc.ai/" hreflang="en" />
   <link rel="alternate" href="https://www.svhc.ai/" hreflang="x-default" />
-
   <meta name="robots" content="index,follow,max-image-preview:large">
+
   <meta property="og:title" content="SVHC.ai — Actif numérique premium" />
-  <meta property="og:description" content="Actif premium pour la conformité REACH / substances SVHC. Veille, classification, gestion des risques. Offres sérieuses uniquement (entreprises & institutions)." />
+  <meta property="og:description" content="SVHC/REACH — inventaires & déclarations (SCIP), RoHS/CLP/TSCA/Prop 65, BOM/SDS, preuves & audit." />
   <meta property="og:url" content="https://www.svhc.ai/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.svhc.ai/og.jpg" />
+  <meta property="og:image:alt" content="SVHC.ai — premium digital asset" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://www.svhc.ai/og.jpg" />
 
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" as="image" href="/logo-svhc.png" imagesizes="260px" />
 
-  <!-- JSON-LD Schema.org -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -32,184 +32,207 @@
     "name":"SVHC.ai",
     "url":"https://www.svhc.ai/",
     "inLanguage":["fr-FR","en-GB","en-US"],
-    "description":"Actif premium pour la conformité REACH / substances SVHC. Veille, classification, gestion des risques.",
+    "description":"Bannière neutre & lisible pour la conformité substances (SVHC/REACH). Inventaires & déclarations (SCIP, RoHS, CLP, TSCA, Prop 65), gestion BOM/SDS, preuves & auditabilité.",
+    "sameAs":["https://www.linkedin.com/company/svhc-ai"],
     "potentialAction":{"@type":"CommunicateAction","target":"mailto:contact@svhc.ai"}
   }
   </script>
 
   <style>
-    :root{
-      --bg:#0b1220;--card:#121a2b;--muted:#7a87a2;--text:#e9eefc;--accent:#8ab4ff;
-      --chip:#1b2640;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px
-    }
+    :root{--bg:#0b1220;--card:#121a2b;--muted:#7a87a2;--text:#e9eefc;--accent:#8ab4ff;--chip:#1b2640;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px}
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif}
     a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
     .wrap{max-width:1040px;margin:0 auto;padding:28px}
     .topbar{display:flex;justify-content:space-between;align-items:center;margin:8px 0 22px}
-    .lang{display:flex;gap:10px;align-items:center}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid #23304a;border-radius:999px;padding:6px 12px;color:#b7c5e6;font-size:13px}
+    .lang{gap:10px;display:flex;align-items:center}
     .lang button{background:var(--chip);color:var(--text);border:1px solid #23304a;padding:7px 12px;border-radius:999px;cursor:pointer}
     .lang button[aria-pressed="true"]{background:var(--accent);color:#0b1422;border-color:transparent}
     .card{background:var(--card);border:1px solid #23304a;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
     .hero h1{margin:0 0 8px;font-size:46px;letter-spacing:.5px}
-    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid #23304a;border-radius:999px;padding:6px 12px;color:#b7c5e6;font-size:13px}
     .cta{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 6px}
-    .btn{display:inline-flex;align-items:center;gap:8px;background:#1a2a47;color:#fff;border:1px solid #26385e;padding:12px 16px;border-radius:999px;text-decoration:none}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:#1a2a47;color:#fff;border:1px solid #26385e;padding:12px 16px;border-radius:999px;cursor:pointer;text-decoration:none}
     .btn.primary{background:var(--accent);color:#0b1422;border-color:transparent}
     .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
-    .col-6{grid-column:span 6} .col-12{grid-column:span 12}
+    .col-6{grid-column:span 6}.col-12{grid-column:span 12}
     .chip{display:inline-block;background:var(--chip);border:1px solid #23304a;border-radius:999px;padding:6px 10px;font-size:13px;color:#b7c5e6}
     .list{display:grid;gap:10px;margin:8px 0}
     .muted{color:var(--muted)} .foot{opacity:.8;font-size:13px;margin-top:24px}
+    img.logo{max-width:260px;height:auto;display:block;margin:8px 0 6px;opacity:.95;border-radius:12px}
     @media (max-width:860px){.col-6{grid-column:span 12}.hero h1{font-size:36px}}
+    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="badge" data-fr>Disponible à l’acquisition</div>
-      <div class="badge" data-en hidden>Available for acquisition</div>
+      <div class="badge">Disponible à l’acquisition</div>
       <div class="lang">
         <button id="btn-fr" aria-pressed="true">FR</button>
         <button id="btn-en" aria-pressed="false">EN</button>
       </div>
     </div>
 
-    <!-- HERO FR -->
+    <!-- ================= HERO FR ================= -->
     <section class="card hero" data-fr>
       <h1>SVHC.ai</h1>
-      <img src="/logo-svhc.png" alt="SVHC.ai" style="max-width:260px;height:auto;display:block;margin:8px 0 6px;opacity:.95;border-radius:12px;">
+      <img class="logo" src="/logo-svhc.png" alt="SVHC.ai" loading="eager">
       <p class="muted">
-        La référence pour la conformité <b>REACH / substances SVHC</b> — veille, classification assistée par IA, gestion des risques et dossiers.
-        <br><b>Offres sérieuses uniquement (entreprises & institutions).</b>
+        Bannière neutre & lisible pour la conformité <b>SVHC / REACH</b> et cadres connexes — déclarations <b>SCIP</b>, <b>RoHS</b>, <b>CLP</b>, <b>TSCA</b>, <b>Prop&nbsp;65</b>, gestion <b>BOM</b> & <b>SDS</b>, suivi listes & seuils (0,1% m/m), traçabilité, <b>preuves</b> & <b>auditabilité</b> multi-fournisseurs.<br>
+        <b>Offres sérieuses uniquement (entreprises & institutions).</b>
       </p>
       <div class="cta">
         <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20SVHC.ai.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20pr%C3%A9vu%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">
-          Proposer une offre / Demander un NDA</a>
-        <a class="btn" href="#value">Pourquoi ce nom ?</a>
+          Proposer une offre / Demander un NDA
+        </a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+        <a class="btn" href="https://www.linkedin.com/company/svhc-ai" target="_blank" rel="noopener" aria-label="Ouvrir la page LinkedIn SVHC.ai">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.43V23h-4V8.5z"/></svg>
+          LinkedIn
+        </a>
       </div>
+      <p class="muted" style="margin-top:8px"><b>Nota :</b> actif numérique premium. <b>Usage descriptif</b>. <b>Aucune affiliation officielle</b>. <b>Pas de conseil juridique.</b></p>
     </section>
 
-    <!-- VALUE FR -->
-    <section id="value" class="card" style="margin-top:16px" data-fr>
+    <!-- ================= VALUE + USE CASES FR ================= -->
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr>
       <div class="grid">
         <div class="col-6">
           <h3>Pourquoi ce nom vaut cher</h3>
           <div class="list">
-            <div class="chip">Exact-match “SVHC” (REACH) — autorité immédiate en conformité UE</div>
-            <div class="chip">Positionnement B2B : chimie, matériaux, distributeurs, industriels</div>
-            <div class="chip">Usages multiples : hub, SaaS, veille, registre substances, formation</div>
+            <div class="chip">Exact-match mémorisable — “SVHC”, extension <b>.ai</b> lisible C-suite</div>
+            <div class="chip">SEO B2B — substances, déclarations, <b>evidence store</b>, audit</div>
+            <div class="chip">Crédibilité — bannière neutre pour Qualité/Réglementaire/Supply</div>
+            <div class="chip">Capillaires supply — multi-niveaux fournisseurs & pièces</div>
           </div>
         </div>
         <div class="col-6">
           <h3>Cas d’usage possibles</h3>
           <div class="list">
-            <div class="chip">Veille & alerting SVHC (liste candidate, annexes REACH)</div>
-            <div class="chip">Classification/étiquetage assistés par IA (dossiers, FDS)</div>
-            <div class="chip">Portail fournisseurs & reporting réglementaire</div>
+            <div class="chip">Hub substances : listes SVHC/Annexes, restrictions, seuils</div>
+            <div class="chip">Déclarations : <b>SCIP</b>, RoHS, CLP, TSCA, Prop 65, GADSL</div>
+            <div class="chip">BOM/SDS : collecte fournisseurs, IUCLID, preuves & workflows</div>
+            <div class="chip">Intégrations : PLM/ERP/PIM/MDM, LIMS, GRC, evidence store</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS FR -->
+    <!-- ================= ACQUISITION FR ================= -->
     <section class="card" style="margin-top:16px" data-fr>
       <h3>Acquisition (process sécurisé)</h3>
-      <p class="muted">Process NDA → data-room → offre → escrow → transfert. Nous valorisons une vision long-terme et un usage à forte valeur.</p>
-      <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Proposition">Contact direct : contact@svhc.ai</a>
+      <p class="muted">NDA → data-room (brief stratégique) → offre → escrow → transfert. Vision long-terme & usage à forte valeur.</p>
+      <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Proposition">
+        Contact direct : contact@svhc.ai
+      </a>
     </section>
 
-    <!-- OTHER DOMAINS FR -->
+    <!-- ================= COMPLEMENTARY (FR) ================= -->
     <section class="card" style="margin-top:16px" data-fr>
-      <h3>Actifs stratégiques disponibles (sélection)</h3>
+      <h3>Actifs complémentaires (sélection)</h3>
       <ul class="list">
-        <li class="chip"><a href="https://co2capacity.com" target="_blank" rel="noopener">CO2capacity.com</a> — indicateurs & capacité carbone pour industrie/infrastructures</li>
-        <li class="chip"><a href="https://xgenetics.ai" target="_blank" rel="noopener">Xgenetics.ai</a> — génomique nouvelle génération augmentée par IA</li>
-        <li class="chip"><a href="https://payrisk.ai" target="_blank" rel="noopener">Payrisk.ai</a> — scoring de risque paiements, lutte fraude & conformité par IA</li>
-        <li class="chip"><a href="https://bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a> — interfaces cerveau-machine : identité, sécurité, accès</li>
-        <li class="chip"><a href="https://svhc.ai" target="_blank" rel="noopener">SVHC.ai</a> — conformité REACH / SVHC, veille & classification IA</li>
-        <li class="chip"><a href="https://dppcompliance.com" target="_blank" rel="noopener">DPPcompliance.com</a> — Digital Product Passport (UE), conformité & traçabilité</li>
+        <li class="chip"><a href="https://www.reportingdurable.fr" target="_blank" rel="noopener">ReportingDurable.fr</a> — CSRD/ESRS</li>
+        <li class="chip"><a href="https://www.dppcompliance.com" target="_blank" rel="noopener">DPPCompliance.com</a> — Digital Product Passport (ESPR)</li>
+        <li class="chip"><a href="https://www.passeportproduit.fr" target="_blank" rel="noopener">PasseportProduit.fr</a> — bannière FR DPP</li>
+        <li class="chip"><a href="https://www.cbprcompliance.com" target="_blank" rel="noopener">CBPRCompliance.com</a> — transferts transfrontières</li>
+        <li class="chip"><a href="https://www.nistcsfcompliance.com" target="_blank" rel="noopener">NISTCSFCompliance.com</a> — gouvernance risques & contrôles</li>
+        <li class="chip"><a href="https://www.co2capacity.com" target="_blank" rel="noopener">CO2Capacity.com</a> — capacité carbone & disclosures</li>
+        <li class="chip"><a href="https://www.piplcompliance.com" target="_blank" rel="noopener">PIPLCompliance.com</a> — PIPL (Chine)</li>
       </ul>
-      <p class="foot">Offres sérieuses uniquement. Possibilité de pack « multi-actifs ». — Contact : <a href="mailto:contact@svhc.ai">contact@svhc.ai</a></p>
+      <p class="foot">Offres sérieuses uniquement. Possibilité de pack « multi-actifs ». <br>Contact : <a href="mailto:contact@svhc.ai">contact@svhc.ai</a></p>
     </section>
 
-    <!-- HERO EN -->
-    <section class="card hero" data-en hidden>
-      <h1>SVHC.ai</h1>
-      <img src="/logo-svhc.png" alt="SVHC.ai" style="max-width:260px;height:auto;display:block;margin:8px 0 6px;opacity:.95;border-radius:12px;">
-      <p class="muted">
-        The reference for <b>REACH / SVHC</b> compliance — AI-assisted monitoring, classification and risk management.
-        <br><b>Serious offers only (companies & institutions).</b>
-      </p>
+    <!-- ================= DOCS FR ================= -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Documents / Briefs</h3>
       <div class="cta">
-        <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20obtain%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20SVHC.ai.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0A%0D%0ABest%2C">
-          Submit an offer / Request NDA</a>
-        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="/Acquisition%20Brief%20SVHC-AI-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Ouvrir (FR) dans le navigateur</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20SVHC-AI-202511.pdf" download="SVHC-AI-Brief-FR-202511.pdf" type="application/pdf">📥 Télécharger (FR, PDF)</a>
       </div>
     </section>
 
-    <!-- VALUE EN -->
+    <!-- ================= HERO EN ================= -->
+    <section class="card hero" data-en hidden>
+      <h1>SVHC.ai</h1>
+      <img class="logo" src="/logo-svhc.png" alt="SVHC.ai" loading="eager">
+      <p class="muted">
+        Neutral, C-suite-readable banner for <b>SVHC / REACH</b> substance compliance — <b>SCIP</b> notifications, <b>RoHS</b>, <b>CLP</b>, <b>TSCA</b>, <b>Prop&nbsp;65</b>, <b>BOM</b> & <b>SDS</b> management, list & threshold tracking (0.1% w/w), traceability, <b>evidence</b> & <b>auditability</b> across suppliers.<br>
+        <b>Serious offers only (companies & institutions).</b>
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20SVHC.ai.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
+          Submit an offer / Request NDA
+        </a>
+        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="https://www.linkedin.com/company/svhc-ai" target="_blank" rel="noopener" aria-label="Open SVHC.ai on LinkedIn">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.43V23h-4V8.5z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <p class="muted" style="margin-top:8px"><b>Note:</b> premium digital asset. <b>Descriptive use</b>. <b>No official affiliation</b>. <b>No legal advice.</b></p>
+    </section>
+
+    <!-- ================= VALUE + USE CASES EN ================= -->
     <section id="value-en" class="card" style="margin-top:16px" data-en hidden>
       <div class="grid">
         <div class="col-6">
           <h3>Why this name is valuable</h3>
           <div class="list">
-            <div class="chip">Exact-match “SVHC” (REACH) — instant authority in EU compliance</div>
-            <div class="chip">B2B positioning: chemicals, materials, distributors, manufacturers</div>
-            <div class="chip">Multiple use cases: hub, SaaS, monitoring, substance register, training</div>
+            <div class="chip">Exact-match & memorable — “SVHC”, focused <b>.ai</b> TLD</div>
+            <div class="chip">B2B SEO — substances, declarations, <b>evidence store</b>, audit</div>
+            <div class="chip">Credibility — neutral banner for Quality/Regulatory/Supply</div>
+            <div class="chip">Supply capillarity — multi-tier suppliers & parts</div>
           </div>
         </div>
         <div class="col-6">
           <h3>Possible use cases</h3>
           <div class="list">
-            <div class="chip">SVHC monitoring & alerts (candidate list, REACH annexes)</div>
-            <div class="chip">AI-assisted classification/labeling (dossiers, SDS)</div>
-            <div class="chip">Supplier portal & regulatory reporting</div>
+            <div class="chip">Substance hub: SVHC/Annex lists, restrictions, thresholds</div>
+            <div class="chip">Declarations: <b>SCIP</b>, RoHS, CLP, TSCA, Prop 65, GADSL</div>
+            <div class="chip">BOM/SDS: supplier intake, IUCLID, evidence & workflows</div>
+            <div class="chip">Integrations: PLM/ERP/PIM/MDM, LIMS, GRC, evidence store</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS EN -->
+    <!-- ================= ACQUISITION EN ================= -->
     <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Acquisition (secure process)</h3>
-      <p class="muted">NDA → data-room → offer → escrow → transfer. We value long-term vision and high-value use.</p>
-      <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Offer">Direct contact: contact@svhc.ai</a>
+      <p class="muted">NDA → data room (strategic brief) → offer → escrow → transfer. Long-term vision & high-value usage.</p>
+      <a class="btn primary" href="mailto:contact@svhc.ai?subject=SVHC.ai%20-%20NDA%20%2F%20Offer">
+        Direct contact: contact@svhc.ai
+      </a>
     </section>
 
-    <!-- OTHER DOMAINS EN -->
+    <!-- ================= DOCS EN/FR ================= -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Documents / Briefs</h3>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20SVHC-AI-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Ouvrir (FR) dans le navigateur</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20SVHC-AI-202511.pdf" download="SVHC-AI-Brief-FR-202511.pdf" type="application/pdf">📥 Télécharger (FR, PDF)</a>
+      </div>
+    </section>
+
     <section class="card" style="margin-top:16px" data-en hidden>
-      <h3>Strategic assets available (selection)</h3>
-      <ul class="list">
-        <li class="chip"><a href="https://co2capacity.com" target="_blank" rel="noopener">CO2capacity.com</a> — carbon indicators & capacity for industry/infrastructure</li>
-        <li class="chip"><a href="https://xgenetics.ai" target="_blank" rel="noopener">Xgenetics.ai</a> — next-gen genomics augmented by AI</li>
-        <li class="chip"><a href="https://payrisk.ai" target="_blank" rel="noopener">Payrisk.ai</a> — payment risk scoring, anti-fraud & compliance with AI</li>
-        <li class="chip"><a href="https://bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a> — brain-computer interfaces: identity, security & access</li>
-        <li class="chip"><a href="https://svhc.ai" target="_blank" rel="noopener">SVHC.ai</a> — REACH / SVHC compliance, AI monitoring & classification</li>
-        <li class="chip"><a href="https://dppcompliance.com" target="_blank" rel="noopener">DPPcompliance.com</a> — Digital Product Passport (EU), compliance & traceability</li>
-      </ul>
-      <p class="foot">Serious offers only. Multi-asset pack available. — Contact: <a href="mailto:contact@svhc.ai">contact@svhc.ai</a></p>
+      <h3>Documents / Briefs</h3>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20SVHC-AI-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Open (EN) in browser</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20SVHC-AI-EN-202511.pdf" download="SVHC-AI-Brief-EN-202511.pdf" type="application/pdf">📥 Download (EN, PDF)</a>
+      </div>
     </section>
 
-    <p class="foot muted">© SVHC.ai — actif numérique premium. Aucune affiliation avec des marques tierces. Usage descriptif uniquement. — Contact : <a href="mailto:contact@svhc.ai">contact@svhc.ai</a></p>
+    <p class="foot muted">© SVHC.ai — actif numérique premium. Aucune affiliation avec des marques/organismes tiers. Usage descriptif uniquement. Pas de conseil juridique. — Contact : <a href="mailto:contact@svhc.ai">contact@svhc.ai</a></p>
   </div>
 
   <script>
-    // Switch FR/EN
-    const frBtn=document.getElementById('btn-fr');
-    const enBtn=document.getElementById('btn-en');
-    const show=(lang)=>{
-      document.querySelectorAll('[data-fr]').forEach(n=>n.hidden=(lang!=='fr'));
+    const frBtn=document.getElementById('btn-fr'); const enBtn=document.getElementById('btn-en');
+    const show=(lang)=>{document.querySelectorAll('[data-fr]').forEach(n=>n.hidden=(lang!=='fr'));
       document.querySelectorAll('[data-en]').forEach(n=>n.hidden=(lang!=='en'));
-      frBtn.setAttribute('aria-pressed',String(lang==='fr'));
-      enBtn.setAttribute('aria-pressed',String(lang==='en'));
-      document.documentElement.lang=lang;
-    };
-    frBtn.addEventListener('click',()=>show('fr'));
-    enBtn.addEventListener('click',()=>show('en'));
-    show('fr');
+      frBtn.setAttribute('aria-pressed',String(lang==='fr')); enBtn.setAttribute('aria-pressed',String(lang==='en'));
+      document.documentElement.lang=lang;};
+    frBtn.addEventListener('click',()=>show('fr')); enBtn.addEventListener('click',()=>show('en')); show('fr');
   </script>
 </body>
 </html>
-
-
